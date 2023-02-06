@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Encriptador de texto</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<script type="text/javascript" src="scripts/encrypt.js"></script>
+	</head>
+	<body>
+
+		<header>
+			
+			<h1>ENCRIPTADOR DE TEXTO</h1>
+
+		</header>
+		<main>
+
+			<textarea id="encryptText" type="text" placeholder="Escribe aquí el texto a encriptar..."></textarea>
+
+			<button type="button" onclick="encrypt()">Encriptar</button>
+			<button type="button" onclick="desencrypt()">Desencriptar</button>
+
+
+			<button id="copyButton" hidden type="button" onclick="copyText()">Copiar</button>
+			
+			<img id="imageArea" src="images/area_para_desencriptar.png" alt="Imagen que no se encontró ningun texto">
+
+			<textarea hidden disabled readonly id="showEncryptText">
+			</textarea>
+			
+		</main>
+		<footer>
+				
+			&copy Dered Vargas
+
+		</footer>
+
+	</body>
+</html>
