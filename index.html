@@ -4,33 +4,52 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Encriptador de texto</title>
+		<link rel="stylesheet" type="text/css" href="styles/reset.css">
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
 		<script type="text/javascript" src="scripts/encrypt.js"></script>
 	</head>
 	<body>
 
-		<header>
+		<header class="cabezera">
 			
-			<h1>ENCRIPTADOR DE TEXTO</h1>
+			<h1>
+				
+				<img class="logo-cabezera" src="images/logo.png" alt="logo de Alura">
+
+			</h1>
 
 		</header>
-		<main>
+		<main class="principal">
 
-			<textarea id="encryptText" type="text" placeholder="Escribe aquí el texto a encriptar..."></textarea>
+			<textarea class="area-encriptador_principal"id="encryptText" type="text" placeholder="Escribe aquí el texto a encriptar..."></textarea>
 
-			<button type="button" onclick="encrypt()">Encriptar</button>
-			<button type="button" onclick="desencrypt()">Desencriptar</button>
+			<p class="exclamacion_principal"> <img src="images/vector.png" alt="signo de exclamación">  Solo letras minúsculas y sin acentos ni carácteres especiales</p>
 
+			<button class="boton-encriptar_principal" type="button" onclick="encrypt()">Encriptar</button>
+			<button class="boton-desencriptar_principal" type="button" onclick="desencrypt()">Desencriptar</button>
 
-			<button id="copyButton" hidden type="button" onclick="copyText()">Copiar</button>
-			
-			<img id="imageArea" src="images/area_para_desencriptar.png" alt="Imagen que no se encontró ningun texto">
+			<div>
+				
+				<div class="area-desencriptador-texto_principal" id="imageArea">
+				
+					<img class="imagen-desencriptador_texto" src="Images/muneco.png" alt="Personaje buscando algo con una lupa">
+					<h3 class="texto-desencriptador_texto">Ningun mensaje fue encontrado</h3>	
+					<p class="texto-desencriptador_texto">Ingresa el texto que desees encriptar o desencriptar</p>
 
-			<textarea hidden disabled readonly id="showEncryptText">
-			</textarea>
-			
+				</div>
+
+				<textarea class="area_desencriptador_principal" hidden disabled readonly id="showEncryptText">
+				</textarea>
+
+				<button class="boton-copiar_principal" id="copyButton" hidden type="button" onclick="copyText()">Copiar</button>
+
+			</div>
+
 		</main>
-		<footer>
+		<footer class="pie-pagina">
 				
 			&copy Dered Vargas
 

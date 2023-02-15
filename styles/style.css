@@ -1,13 +1,136 @@
-#encryptText {
+body {
 
-	width: 80%;
-	height: 16em;
+	
+	font-family: 'Slabo 27px', serif;
 
 }
 
-#showEncryptText {
+.cabezera {
 
-	width: 80%;
-	height: 16em;
+  	background-color: #aaaaaa;
+
+}
+
+
+.logo-cabezera {
+
+	margin: 0.5em 0.2em;
+	padding: 0.8em;
+	width: 100px;
+
+}
+
+.principal {
+
+	background: linear-gradient(#aaaaaa,#666666);
+
+}
+
+.area-encriptador_principal {
+
+	margin-top: 1em;
+	margin-left: 12em;
+	padding: 1.5em;
+	width: 52%;
+	height: 25em;
+	border-color: #0a3871;
+	border-radius: 0.5em;
+	border-style: outset;
+	box-sizing: border-box;
+	background: linear-gradient(#0a3871,#081650);
+	resize: none;	
+	color: #dddddd;
+
+}
+
+.exclamacion_principal {
+
+	margin-top: 0.4em;
+	margin-left: 10em;
+
+}
+
+.boton-encriptar_principal {
+
+	box-sizing: border-box;
+	padding: 1em;
+	margin: 1.25em;
+	margin-left: 20em;
+	width: 15em;
+	border-style: none;
+	border-radius: 1em;
+	background-color: #081650;
+	color: #dddddd;
+
+}
+
+.boton-desencriptar_principal {
+
+	box-sizing: border-box;
+	padding: 1em;
+	margin: 1.25em;
+	margin-left: 4em;
+	width: 15em;
+	border-style: none;
+	border-radius: 1em;
+	background-color: #bbbbbb;
+
+}
+
+.area-desencriptador-texto_principal {
+
+	position: absolute;
+	left: 58.6em;
+	top: 5.5em;
+	text-align: center;
+	box-sizing: border-box;
+
+}
+
+.imagen-desencriptador_texto {
+
+	width: 15em;
+	margin: 2em;
+
+}
+
+.area_desencriptador_principal {
+
+	padding: 1.5em;
+	position: absolute;
+	width: 26.6%;
+	height: 33em;
+	left: 68.6em;
+	top: 7.3em;
+	border-style: none;
+	border-radius: 1em;
+	resize: none;
+	background: linear-gradient(#cccccc,#888888);
+	box-sizing: border-box;
+	color: #000000;
+
+}
+
+.boton-copiar_principal {
+
+	box-sizing: border-box;
+	padding: 1em;
+	margin: 1em;
+	margin-left: 12em;
+	width: 15em;
+	border-style: none;
+	border-radius: 1em;
+	background-color: #081650;
+	color: #dddddd;
+	position: absolute;
+	left: 62.5em;
+	bottom: 7.9em;
+
+}
+
+.pie-pagina {
+
+	padding: 2.8em;
+	background-color: #666666;
 
 }
